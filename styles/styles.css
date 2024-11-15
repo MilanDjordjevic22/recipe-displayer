@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sawarabi+Gothic&display=swap');
+
+/* Page layout styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: #333;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header section styling */
+header {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    color: #ccc;
+    font-size: 1.2em;
+}
+
+/* Main section styling */
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+.recipes-header{
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #333;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+/* Recipe list styling */
+#recipe-list {
+    text-align: center;
+    padding: 10px;
+    background-color: #eaeaea;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#recipe-list a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.2em;
+    color: #007acc;
+    text-decoration: none;
+}
+
+#recipe-list a:hover {
+    text-decoration: underline;
+    color: #005f99;
+}
+
+/* Recipe instructions, defaults to not be displayed until recipe is clicked on */
+#recipe-info {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#recipe-info h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#recipe-info img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+}
+
+#recipe-info p, #recipe-info h3, #recipe-info li, #recipe-info ol {
+    color: #333;
+    line-height: 1.5em;
+}
+
+#recipe-info h3 {
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 20px;
+}
+
+#recipe-info ul, #recipe-info ol {
+    padding-left: 20px;
+}
+
+/* Buttons styling */
+button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f99;
+}
+
+/* Footer section styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Font sizes */
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p,
+    #recipe-list a,
+    button {
+        font-size: 1em;
+    }
+
+    h2,
+    #recipe-info h2 {
+        font-size: 1.5em;
+    }
+
+    #recipe-info h3 {
+        font-size: 1.2em;
+    }
+
+    /* Reduced padding and margin */
+    #recipe-list a {
+        margin: 5px;
+    }
+
+    button {
+        padding: 8px 16px;
+        margin: 8px 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+
+    /* Font sizes */
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    h2, #recipe-info h2 {
+        font-size: 1.3em;
+    }
+
+    #recipe-list a,
+    button {
+        font-size: 0.9em;
+    }
+
+    /* Margin and padding */
+    #recipe-list a {
+        margin: 3px;
+    }
+
+    button {
+        padding: 6px 12px;
+        margin: 6px 3px;
+    }
+}
